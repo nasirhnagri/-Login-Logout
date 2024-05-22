@@ -1,0 +1,97 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: aqua; */
+    background-image: linear-gradient(-90deg, rgb(169, 203, 224), rgb(185, 185, 211));
+}
+.btns{
+    float: right;
+    grid-gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+#warning{
+    /* margin-left: 300px; */
+    position: relative;
+    top: 100px;
+    height: 150px;
+    left: 30rem;
+    background-color: aqua;
+    padding: 20px;
+    color: black;
+    font-family: sans-serif;
+    place-items: center;
+    
+}
+.view{
+    background-color: rgb(129, 164, 152);
+    color: black;
+    place-items: center;
+    width: 180px;
+    height: 80px;
+}
+.timer{
+    float: left;
+    /* margin-left: 30px; */
+    cursor: pointer;
+}
+.btnClosed{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: brown;
+}
+.btnInter{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: brown;
+
+}
+.Btns{
+    display: flex;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+.mult{
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+#secretData{
+    display: flex;
+    flex-direction: column;
+}
+#delet{
+    width: 50px;
+    height: 20px;
+    font-weight: 700;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+#edit{
+    width: 50px;
+    height: 20px;
+    font-weight: 700;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.cute{
+   /* margin: 0px 0px 40px 100px; */
+   background-color: rgba(47, 31, 31, 0.737);
+   position: relative;
+   color: aliceblue ;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   top: 20px;
+   left: 800px;
+   float: left;
+}
