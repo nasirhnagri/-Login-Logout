@@ -95,3 +95,100 @@ body{
    left: 800px;
    float: left;
 }
+/* #view{
+    width: 50px;
+    height: 20px;
+    font-weight: 700;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+
+} */
+.signUpHeading{
+    font-family: system-ui;
+    font-size: 30px;
+    margin-right: 100px;
+}
+.heading{
+    font-family: system-ui;
+    margin-right: 30px;
+}
+#Btn{
+  margin: 20px 150px 0px 0px;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+form{
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+   background-color: aliceblue;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    width: 400px;
+    margin: 0 auto;
+  box-shadow: 1rem 1rem 1rem 0.79rem rgba(0, 0, 0,0.4)
+
+}
+form{
+  margin-top: 100px;
+}
+.Data{
+    border: 1px solid black;
+}
+.double{
+    display: flex;
+    flex-direction: column;
+   
+}
+.flex{
+    display: flex;
+    background-color: blueviolet;
+    border: 1px solid black;
+    flex-direction: column;
+}
+form h2{
+    font-size: 30px;
+    font-family: system-ui;
+}
+#logInBtn{
+    cursor: pointer;
+}
+.incorrect{
+    color: red;
+    font-size: 15px;
+}
+input{
+    margin-top: 20px;
+    padding: 7px;
+    /* border-radius: 5px; */
+    width: 220px;
+}
+#loginBtns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    grid-gap: 60px;
+}
+#logInBtn{
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#signUpBtn{
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
