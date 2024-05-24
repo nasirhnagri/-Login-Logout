@@ -108,3 +108,16 @@ const openDaletModel = (id)=>{
             view.style.display= "flex"
     }
 }
+const confirmDelet  =() =>{
+    let deletData = [...signUpData]
+    // console.log(deletData)
+    let id ="";
+    let index =  deletData.findIndex((x)=>
+    x.id===signUpData.id)
+    if(index){
+        signUpData.splice(index,1)
+    }
+    console.log(index)
+    render()
+    cute()
+}
