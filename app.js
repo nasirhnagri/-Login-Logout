@@ -121,3 +121,32 @@ const confirmDelet  =() =>{
     render()
     cute()
 }
+const cute = () => {
+    inputForm.style.display = "none" 
+    view.style.display="none"
+   
+}
+const signUpForm = (id) => {
+    let inputForm = document.getElementById("inputForm")
+    let newData = [...signUpData,newSignUp]
+    let index = newData.findIndex((x)=> x.id === newSignUp.id)
+    // console.log(index)
+    // console.log(newData)
+    newData.map((item)=>{
+        // console.log(item)
+    let form = `
+    <div   id="wholForm"">
+    <div onclick="cute()"  class="cute">&times</div>
+    <form  onkeyup="dataInter()" onclick="proPagation(event)" onsubmit="hendelChang()">
+    <h4 class="signUpHeading">Sign Up</h4>
+    <h6 class="heading">Please fill in this to Create an account </h6>
+        <input class="input" value="${item.FirstName}" name= "FirstName" type="text" placeholder="fullname" required>
+        <input class="input" value="${item.Email}" name = "email" type="Email" placeholder="email" required>
+        <input class="input" value="${item.passPassword}" name="passPassword" type="password" placeholder="password" required>
+        <input class="input" value="${item.passConfirmPassword}" name="passConfirmPassword"  type="password" placeholder="confirmpassword" required      >
+        <button   type="submit"   id="Btn">Sign Up</button>
+           </form>
+        </div>`
+    inputForm.innerHTML = form
+})   
+}
