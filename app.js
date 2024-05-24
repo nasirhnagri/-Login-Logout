@@ -85,3 +85,26 @@ const render = () => {
     }
     authentication ? offForm.style.display = "none" : offForm.style.display = "block";
 }
+const openDaletModel = (id)=>{
+    const openData= [...signUpData]
+    let open = "";
+    const dataIndex = openData.findIndex((x)=> x.id===id)
+    console.log(dataIndex) 
+     if(dataIndex){
+        let view = document.getElementById("view")
+            open = `
+            <div id="warning">
+            <div onclick="cute()" class="mult">&times</div>
+            <h4>Are you sure</h4>
+            <hr></hr>
+            <h5>Do you want to delet</h5>
+            <div class="Btns">
+            <button onclick="cute()" class="btnClosed">NO</button>
+            <button onclick="confirmDelet()" class="btnInter">yes</button>
+            </div>
+            </div>
+            `
+            view.innerHTML= open;
+            view.style.display= "flex"
+    }
+}
