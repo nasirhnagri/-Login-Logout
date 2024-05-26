@@ -172,3 +172,27 @@ const Veiw = (id)=>{
      view.innerHTML = outputView
      view.style.display ="flex"
 }
+const dataInter =(id,e)=>{
+    let student = [...signUpData,newSignUp]
+    let index = student.findIndex((x)=> x.id===id)
+        // console.log(index)
+    if(index,e){
+    let newStudent={
+        ...newSignUp
+    }
+    let obj = {
+    [e.target.name]: e.target.value
+    }
+    console.log(obj)
+    signUpData.newSignUp={
+        ...signUpData.newSignUp,
+        ...newStudent  
+    }
+    signUpData.push(obj)
+    // console.log(newStudent) 
+    console.log(signUpData)
+  
+    }
+    render()
+  
+}
