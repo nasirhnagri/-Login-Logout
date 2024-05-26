@@ -150,3 +150,25 @@ const signUpForm = (id) => {
     inputForm.innerHTML = form
 })   
 }
+const Veiw = (id)=>{
+    console.log("hello console how are you baby..."  )
+    let student = [...signUpData]
+    console.log(student)
+    let studentTwo = student.find((x)=> x.id===id)
+    // let view = document.querySelector("#view");
+    let outputView = ""
+    if(studentTwo){
+        outputView = `
+        <div class="view">
+        <div onclick="cute()" class="timer">&times<div>
+        <tr>
+        <td  name= "email">Email::${studentTwo.email}</td>
+        <td  name="password">Password::${studentTwo.password}</td>
+        </tr>
+        </div>
+
+        `
+    }
+     view.innerHTML = outputView
+     view.style.display ="flex"
+}
