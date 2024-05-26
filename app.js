@@ -196,3 +196,13 @@ const dataInter =(id,e)=>{
     render()
   
 }
+logIn.addEventListener("click", function (e) {
+    e.preventDefault()
+    render()
+})
+signUp.addEventListener("click", function (e) {
+    e.preventDefault()
+    signUpForm()
+    offForm.style.display = "none"
+    // console.log("hello")
+})
